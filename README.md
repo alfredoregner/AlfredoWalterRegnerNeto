@@ -102,7 +102,7 @@ RF017 – Interface de Gestão de Estoque
 
 O sistema deve possuir uma tela dedicada para registrar entradas e saídas de estoque e visualizar o saldo atual.
 
-
+<img width="1401" height="867" alt="Conceitual SAEP" src="https://github.com/user-attachments/assets/be63accf-4396-4334-9995-0dec13ebcbc7" />
 
 # Conectar ao banco criado antes de criar as tabelas:
 CREATE DATABASE saep_db;
@@ -111,7 +111,6 @@ CREATE DATABASE saep_db;
 ```
 CREATE TABLE login (
     id_login SERIAL PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
     senha VARCHAR(100) NOT NULL
 );
@@ -149,10 +148,10 @@ CREATE TABLE historico (
 ```
 ## Inserindo os dados nas tabelas
 ```
-insert into login(nome, email, senha)
-values('usuario teste', 'usuario@teste.com', 'senai103@'),
-('usuario admin', administrador@teste.com', 'senai103@'),
-('usuario clinete', 'cliente@teste.com', 'senai103@');
+insert into login(email, senha)
+values('usuario@teste.com', 'senai103@'),
+(administrador@teste.com', 'senai103@'),
+('cliente@teste.com', 'senai103@');
 
 INSERT INTO produto (
     nome, preco_unit, quantidade, qtd_minima, qtd_maxima,
@@ -179,3 +178,4 @@ VALUES
 (4, 'saida', 10, 999.00, 1, '2025-11-03'),  -- venda de cabos
 (5, 'saida', 1, 499.00, 3, '2025-11-03');   -- venda de headset
 ```
+
