@@ -180,8 +180,7 @@ VALUES
 ```
 
 
-#Como instalar o sistema:
-
+# Instalação do sistema
 Abrir terminal do editor de código e digitar o seguinte comando: 
 npm install
 
@@ -205,7 +204,7 @@ python app.py (habilitar a api)
 
 Para confirmar que os dados do banco de dados estão corretos, deve acessar o arquivo app.py, pois caso tenha alguma configuração do servidor Postgres, como porta ou senha, deve ser alterado no arquivo para permitir acesso ao sistema
 
-
+# Lista de ferramentas utilizadas no projeto
 HTML
 CSS
 JavaScript
@@ -256,3 +255,4 @@ Testar se informações como produtos críticos (estoque baixo) e últimas movim
 
 14. Teste de Responsividade da Interface
 Certificar que a interface web funciona adequadamente em diferentes tamanhos de tela (PC, notebook, tablet).
+
