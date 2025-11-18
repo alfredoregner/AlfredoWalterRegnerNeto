@@ -179,3 +179,37 @@ VALUES
 (5, 'saida', 1, 499.00, 3, '2025-11-03');   -- venda de headset
 ```
 
+
+#Como instalar o sistema:
+
+Abrir terminal do editor de código e digitar o seguinte comando: 
+npm install
+
+Instalar a versão do vite com o comando:
+npm install vite@v4
+
+Após instalar o npm, deve instalar a venv do python com o seguinte comando: 
+python -m venv venv
+
+Deve acessar a venv através do comando: 
+.\venv\Scripts\activate
+
+Após acessar, instalar as dependências do projeto com o comando: 
+pip install -r requirements.txt
+
+Abrir um terminal semparado, para executar o sistema com o comando: 
+npm run dev
+
+Retornar ao terminal anterior, que tem acesso a venv, para executar o último comando: 
+python app.py (habilitar a api)
+
+
+
+verificar senhas do banco de dados (app.py)# Ferramentas
+HTML
+CSS
+JavaScript
+React
+Python
+Flask
+PostgreSQL
