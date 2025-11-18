@@ -203,9 +203,9 @@ npm run dev
 Retornar ao terminal anterior, que tem acesso a venv, para executar o último comando: 
 python app.py (habilitar a api)
 
+Para confirmar que os dados do banco de dados estão corretos, deve acessar o arquivo app.py, pois caso tenha alguma configuração do servidor Postgres, como porta ou senha, deve ser alterado no arquivo para permitir acesso ao sistema
 
 
-verificar senhas do banco de dados (app.py)# Ferramentas
 HTML
 CSS
 JavaScript
@@ -213,3 +213,46 @@ React
 Python
 Flask
 PostgreSQL
+
+# Testes da aplicação
+1. Teste de Login (autenticação)
+Verificar se o usuário consegue acessar o sistema com credenciais válidas e se o login é bloqueado com usuário ou senha incorretos.
+
+2. Teste de Cadastro de Produto
+Validar se o sistema permite inserir todos os dados obrigatórios do produto e salvar corretamente no banco de dados.
+
+3. Teste de Edição de Produto
+Confirmar se um produto existente pode ser atualizado e se as alterações aparecem na listagem e consultas.
+
+4. Teste de Exclusão/Inativação de Produto
+Testar se o produto pode ser removido/inativado e se ele deixa de aparecer nas telas de movimentações.
+
+5. Teste de Consulta/Listagem de Produtos
+Verificar se a listagem mostra corretamente produtos cadastrados e se filtros funcionam (nome, categoria, etc.).
+
+6. Teste de Entrada de Estoque
+Validar se é possível registrar uma entrada de produto, atualizando quantidades e registrando data e usuário.
+
+7. Teste de Saída de Estoque
+Verificar se o sistema permite registrar saída de produtos e se o estoque é reduzido corretamente.
+
+8. Teste de Atualização de Quantidade de Estoque
+Confirmar que cada movimentação (entrada/saída) altera corretamente o saldo do estoque no banco de dados.
+
+9. Teste de Alerta de Estoque Mínimo
+Simular estoque abaixo do mínimo e validar se o sistema emite alerta automático ao usuário.
+
+10. Teste de Configuração de Estoque Mínimo
+Verificar se o usuário consegue definir o nível mínimo e se o sistema salva essa informação corretamente.
+
+11. Teste de Histórico de Movimentações
+Validar se cada movimentação gera um registro com data, usuário e tipo de operação.
+
+12. Teste de Consulta do Histórico
+Verificar se o histórico pode ser filtrado por data, usuário, produto ou tipo de operação.
+
+13. Teste da Interface Principal (Dashboard)
+Testar se informações como produtos críticos (estoque baixo) e últimas movimentações aparecem corretamente.
+
+14. Teste de Responsividade da Interface
+Certificar que a interface web funciona adequadamente em diferentes tamanhos de tela (PC, notebook, tablet).
